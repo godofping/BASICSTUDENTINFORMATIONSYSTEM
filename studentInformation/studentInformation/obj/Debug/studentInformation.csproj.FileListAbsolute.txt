@@ -1,0 +1,10 @@
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.csprojAssemblyReference.cache
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.Form1.resources
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.Properties.Resources.resources
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.GenerateResource.cache
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.CoreCompileInputs.cache
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\bin\Debug\studentInformation.exe.config
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\bin\Debug\studentInformation.exe
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\bin\Debug\studentInformation.pdb
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.exe
+C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.pdb
