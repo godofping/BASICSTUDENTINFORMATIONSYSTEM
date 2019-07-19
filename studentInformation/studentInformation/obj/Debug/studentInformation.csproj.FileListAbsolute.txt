@@ -8,3 +8,19 @@ C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\bin\Debu
 C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\bin\Debug\studentInformation.pdb
 C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.exe
 C:\Users\Dade Murphy\source\repos\studentInformation\studentInformation\obj\Debug\studentInformation.pdb
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\studentInformation.exe.config
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\studentInformation.exe
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\studentInformation.pdb
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\BouncyCastle.Crypto.dll
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\Google.Protobuf.dll
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\MySql.Data.dll
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\Google.Protobuf.xml
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csprojAssemblyReference.cache
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.Form1.resources
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.Properties.Resources.resources
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.GenerateResource.cache
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.CopyComplete
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.exe
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.pdb
