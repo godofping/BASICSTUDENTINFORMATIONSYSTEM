@@ -100,9 +100,18 @@
             // 
             // dg_students
             // 
-            this.dg_students.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_students.AllowUserToAddRows = false;
+            this.dg_students.AllowUserToDeleteRows = false;
+            this.dg_students.AllowUserToResizeColumns = false;
+            this.dg_students.AllowUserToResizeRows = false;
+            this.dg_students.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dg_students.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dg_students.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dg_students.EnableHeadersVisualStyles = false;
+            this.dg_students.GridColor = System.Drawing.SystemColors.ControlLight;
             this.dg_students.Location = new System.Drawing.Point(339, 32);
             this.dg_students.Name = "dg_students";
+            this.dg_students.ReadOnly = true;
             this.dg_students.Size = new System.Drawing.Size(378, 239);
             this.dg_students.TabIndex = 7;
             // 
