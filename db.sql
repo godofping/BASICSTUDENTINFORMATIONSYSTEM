@@ -42,11 +42,11 @@ CREATE TABLE `students_table` (
   PRIMARY KEY (`studentId`),
   KEY `FK_student_table` (`sectionId`),
   CONSTRAINT `FK_student_table` FOREIGN KEY (`sectionId`) REFERENCES `sections_table` (`sectionId`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 /*Data for the table `students_table` */
 
-insert  into `students_table`(`studentId`,`firstName`,`lastName`,`sectionId`) values (1,'trest','tes2',2),(2,'trest','tes2',2),(3,'trest1','tes21',1),(4,'test','test1',3),(5,'asd','asd',2),(6,'asda','asdasd',3),(7,'asd','asd',2),(8,'as','asd',1),(9,'asd','asdasd',2),(10,'asd','sd',1),(11,'as','asd',3);
+insert  into `students_table`(`studentId`,`firstName`,`lastName`,`sectionId`) values (6,'tae','asdasdasd',4),(15,'rex','asddd1dasdasd',1),(16,'tt','tttttttttttttttttt',3),(17,'sad','asd',1);
 
 /* Procedure structure for procedure `addStudents` */
 
@@ -56,16 +56,57 @@ DELIMITER $$
 
 /*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `addStudents`(
     
-    tb_firstName VARCHAR(60),
-    tb_lastName VARCHAR(60),
-    cb_section INT(6)
+    _firstName VARCHAR(60),
+    _lastName VARCHAR(60),
+    _sectionId INT(6)
 	
     
     
     )
 BEGIN
     
-    insert into students_table (firstName, lastName, sectionId) values (tb_firstName, tb_lastName, cb_section);
+    insert into students_table (firstName, lastName, sectionId) values (_firstName, _lastName, _sectionId);
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `deleteStudents` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `deleteStudents` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteStudents`(
+    
+    _studentId int(6)
+    
+    )
+BEGIN
+    
+    delete from students_table where studentId = _studentId;
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `updateStudents` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `updateStudents` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `updateStudents`(
+   
+    
+    _studentId INT(6),
+    _firstName VARCHAR(60),
+    _lastName VARCHAR(60),
+    _sectionId INT(6)
+    
+    )
+BEGIN
+    
+    update students_table set firstName = _firstName, lastName = _lastName,  sectionId = _sectionId where studentId = _studentId;
+   
+    
+    
     END */$$
 DELIMITER ;
 

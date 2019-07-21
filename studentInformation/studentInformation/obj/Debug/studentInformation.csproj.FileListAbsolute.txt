@@ -17,10 +17,10 @@ C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformat
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\Google.Protobuf.xml
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\bin\Debug\MySql.Data.xml
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csprojAssemblyReference.cache
-C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.Form1.resources
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.Properties.Resources.resources
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.GenerateResource.cache
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.CoreCompileInputs.cache
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.csproj.CopyComplete
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.exe
 C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.pdb
+C:\xampp\htdocs\BASICSTUDENTINFORMATIONSYSTEM\studentInformation\studentInformation\obj\Debug\studentInformation.mainForm.resources

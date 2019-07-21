@@ -1,6 +1,6 @@
 ﻿namespace studentInformation
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,8 @@
             this.l_firstName = new System.Windows.Forms.Label();
             this.tb_firstName = new System.Windows.Forms.TextBox();
             this.tb_lastName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.l_lastName = new System.Windows.Forms.Label();
+            this.l_section = new System.Windows.Forms.Label();
             this.cb_section = new System.Windows.Forms.ComboBox();
             this.dg_students = new System.Windows.Forms.DataGridView();
             this.b_clear = new System.Windows.Forms.Button();
@@ -40,6 +40,9 @@
             this.b_delete = new System.Windows.Forms.Button();
             this.b_add = new System.Windows.Forms.Button();
             this.b_save = new System.Windows.Forms.Button();
+            this.b_cancel = new System.Windows.Forms.Button();
+            this.tb_search = new System.Windows.Forms.TextBox();
+            this.l_search = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dg_students)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,25 +72,25 @@
             this.tb_lastName.Size = new System.Drawing.Size(217, 20);
             this.tb_lastName.TabIndex = 4;
             // 
-            // label1
+            // l_lastName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 102);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Last Name:";
+            this.l_lastName.AutoSize = true;
+            this.l_lastName.Location = new System.Drawing.Point(11, 102);
+            this.l_lastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_lastName.Name = "l_lastName";
+            this.l_lastName.Size = new System.Drawing.Size(61, 13);
+            this.l_lastName.TabIndex = 3;
+            this.l_lastName.Text = "Last Name:";
             // 
-            // label2
+            // l_section
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 133);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Section:";
+            this.l_section.AutoSize = true;
+            this.l_section.Location = new System.Drawing.Point(11, 133);
+            this.l_section.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_section.Name = "l_section";
+            this.l_section.Size = new System.Drawing.Size(46, 13);
+            this.l_section.TabIndex = 5;
+            this.l_section.Text = "Section:";
             // 
             // cb_section
             // 
@@ -107,13 +110,17 @@
             this.dg_students.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_students.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dg_students.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dg_students.EnableHeadersVisualStyles = false;
             this.dg_students.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dg_students.Location = new System.Drawing.Point(339, 32);
+            this.dg_students.Location = new System.Drawing.Point(339, 36);
             this.dg_students.Name = "dg_students";
             this.dg_students.ReadOnly = true;
+            this.dg_students.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dg_students.RowHeadersVisible = false;
+            this.dg_students.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dg_students.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_students.Size = new System.Drawing.Size(378, 239);
             this.dg_students.TabIndex = 7;
+            this.dg_students.SelectionChanged += new System.EventHandler(this.Dg_students_SelectionChanged);
             // 
             // b_clear
             // 
@@ -135,6 +142,7 @@
             this.b_update.TabIndex = 9;
             this.b_update.Text = "Update";
             this.b_update.UseVisualStyleBackColor = true;
+            this.b_update.Click += new System.EventHandler(this.B_update_Click);
             // 
             // b_delete
             // 
@@ -145,6 +153,7 @@
             this.b_delete.TabIndex = 10;
             this.b_delete.Text = "Delete";
             this.b_delete.UseVisualStyleBackColor = true;
+            this.b_delete.Click += new System.EventHandler(this.B_delete_Click);
             // 
             // b_add
             // 
@@ -168,11 +177,44 @@
             this.b_save.UseVisualStyleBackColor = true;
             this.b_save.Click += new System.EventHandler(this.B_save_Click);
             // 
-            // Form1
+            // b_cancel
+            // 
+            this.b_cancel.Location = new System.Drawing.Point(156, 169);
+            this.b_cancel.Margin = new System.Windows.Forms.Padding(2);
+            this.b_cancel.Name = "b_cancel";
+            this.b_cancel.Size = new System.Drawing.Size(56, 19);
+            this.b_cancel.TabIndex = 13;
+            this.b_cancel.Text = "Cancel";
+            this.b_cancel.UseVisualStyleBackColor = true;
+            this.b_cancel.Click += new System.EventHandler(this.B_cancel_Click);
+            // 
+            // tb_search
+            // 
+            this.tb_search.Location = new System.Drawing.Point(424, 11);
+            this.tb_search.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_search.Name = "tb_search";
+            this.tb_search.Size = new System.Drawing.Size(293, 20);
+            this.tb_search.TabIndex = 15;
+            this.tb_search.TextChanged += new System.EventHandler(this.Tb_search_TextChanged);
+            // 
+            // l_search
+            // 
+            this.l_search.AutoSize = true;
+            this.l_search.Location = new System.Drawing.Point(336, 14);
+            this.l_search.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_search.Name = "l_search";
+            this.l_search.Size = new System.Drawing.Size(75, 13);
+            this.l_search.TabIndex = 14;
+            this.l_search.Text = "Search Name:";
+            // 
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 295);
+            this.ClientSize = new System.Drawing.Size(729, 287);
+            this.Controls.Add(this.tb_search);
+            this.Controls.Add(this.l_search);
+            this.Controls.Add(this.b_cancel);
             this.Controls.Add(this.b_save);
             this.Controls.Add(this.b_add);
             this.Controls.Add(this.b_delete);
@@ -180,13 +222,13 @@
             this.Controls.Add(this.b_clear);
             this.Controls.Add(this.dg_students);
             this.Controls.Add(this.cb_section);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.l_section);
             this.Controls.Add(this.tb_lastName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.l_lastName);
             this.Controls.Add(this.tb_firstName);
             this.Controls.Add(this.l_firstName);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BASIC STUDENT INFORMATION SYSTEM";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -200,8 +242,8 @@
         private System.Windows.Forms.Label l_firstName;
         private System.Windows.Forms.TextBox tb_firstName;
         private System.Windows.Forms.TextBox tb_lastName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label l_lastName;
+        private System.Windows.Forms.Label l_section;
         private System.Windows.Forms.ComboBox cb_section;
         private System.Windows.Forms.DataGridView dg_students;
         private System.Windows.Forms.Button b_clear;
@@ -209,6 +251,9 @@
         private System.Windows.Forms.Button b_delete;
         private System.Windows.Forms.Button b_add;
         private System.Windows.Forms.Button b_save;
+        private System.Windows.Forms.Button b_cancel;
+        private System.Windows.Forms.TextBox tb_search;
+        private System.Windows.Forms.Label l_search;
     }
 }
 
