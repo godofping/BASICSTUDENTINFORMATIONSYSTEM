@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 using MySql.Data.MySqlClient;
 
+
 namespace studentInformation
 
 {
     public partial class mainForm : Form
     {
+        
+     
+        string connectionString = ConnectionClass.connectionString;
 
-        string connectionString = @"Server=localhost;Database=student_information_db;Uid=root;Pwd=;";
         string mode = "";
         int studentId = 0;
 
@@ -75,6 +78,7 @@ namespace studentInformation
             {
                 if (mode.Equals("add"))
                 {
+                 
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
                     {
 
