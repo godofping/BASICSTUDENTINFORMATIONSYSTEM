@@ -42,11 +42,11 @@ CREATE TABLE `students_table` (
   PRIMARY KEY (`studentId`),
   KEY `FK_student_table` (`sectionId`),
   CONSTRAINT `FK_student_table` FOREIGN KEY (`sectionId`) REFERENCES `sections_table` (`sectionId`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 
 /*Data for the table `students_table` */
 
-insert  into `students_table`(`studentId`,`firstName`,`lastName`,`sectionId`) values (6,'tae','asdasdasd',4),(15,'rex','asddd1dasdasd',1),(16,'tt','tttttttttttttttttt',3),(17,'sad','asd',1);
+insert  into `students_table`(`studentId`,`firstName`,`lastName`,`sectionId`) values (6,'tae','asdasdasd',4),(15,'rex','asddd1dasdasd',1),(16,'tt','tttttttttttttttttt',3),(17,'sad','asd',1),(19,'asd','asd',1);
 
 /* Procedure structure for procedure `addStudents` */
 
